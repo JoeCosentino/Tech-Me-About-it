@@ -4,6 +4,6 @@
         <div>{{body}}</div>
     </div>
     <div>
-        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
     </div>
 </article>
