@@ -25,7 +25,11 @@ router.get('/', (req, res) => {
             // pass a single post object into the homepage template
             const posts = dbPostData.map(post => post.get({ plain: true }));
             // this is passing { posts } to be used on homepage.handlebars
-            res.render('homepage', { posts });
+            res.render('homepage', {
+                posts,
+                // to pass the session variable to homepage
+                loggedIn: req.session.loggedIn
+            });
         })
         .catch(err => {
             console.log(err);
