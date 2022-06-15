@@ -1,3 +1,199 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------- main */
+
+body, main {
+    margin: 15px
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    text-decoration: none;
+    color: darkgray;
+    margin-left: 10px;
+}
+
+.login-text {
+    text-decoration: none;
+    color: darkgray;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 100px
+}
+
+.dashboard-text,
+.logout-text {
+    color: darkgray;
+    text-decoration: none;
+    margin: 5px 10px 5px 0;
+}
+
+.logout-text {
+    background-color: darkgray;
+    color: white;
+    border: 0;
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #d3eef5;
+    padding: 10px 0 10px 0;
+}
+
+/* -------------------------------------------------------------- login */
+
+.login-form,
+.signup-form {
+    padding: 10px;
+    margin: 15px
+}
+
+.login-form {
+    padding-bottom: 25px;
+    border-bottom: 1px solid darkblue;
+}
+
+#email-login,
+#password-login,
+#username-signup,
+#email-signup,
+#password-signup {
+    padding: 5px;
+    margin: 5px;
+    border: 0;
+    background-color: #cff3fa;
+    color: #4d5557;
+}
+
+.login-btn,
+.signup-btn {
+    background-color: lightblue;
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 45%;
+    color: white;
+}
+
+/* -------------------------------------------------------------- homepage */
+
+.homepage-posts {
+    margin: 25px;
+}
+
+.homepage-post-title {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #777;
+    margin-bottom: 10px
+}
+
+.date-format {
+    float: right;
+}
+
+.homepage-post-body {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.homepage-post-user {
+    color: #777;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.homepage-post-comments {
+    text-decoration: none;
+    color: #19bde6;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------- homepage */
+
+.create-post-section {
+    padding-bottom: 30px;;
+    border-bottom: 1px solid #19bde6;
+}
+
+.dashboard-title {
+    color: #777;
+    padding: 0 0 10px 15px;
+}
+
+.new-post-form {
+    padding: 10px;
+}
+
+.new-title-wrapper,
+.new-body-wrapper {
+    margin-bottom: 8px;
+}
+
+.new-title-label,
+.new-body-label {
+    font-weight: bold;
+    color: #777;
+}
+
+.new-title-input,
+.new-body-input {
+    background-color: #cff3fa;
+    border: 0;
+    padding: 5px 50px;
+    border-radius: 10px;
+}
+
+.new-post-form button {
+    background-color: #cff3fa;
+    border: 0;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: #777
+}
+
+.dashboard-posts-wrapper {
+    margin-top: 25px;
+}
+
+.dashboard-posts-wrapper h2 {
+    color: #777;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #777;
+    padding-left: 25px;
+}
+
+/* -------------------------------------------------------------- edit-post */
+
+.comment-form{
+    padding: 25px;
+}
+
+.comment-form textarea {
+    border: 0;
+    background-color: #d3eef5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.comment-form button {
+    border: 0;
+    background-color: #cff3fa;
+    padding: 4px 8px;
+    border-radius: 15px;
 }

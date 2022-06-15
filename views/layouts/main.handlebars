@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
   <title>Tech Me About It</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Tech Me About It</a>
+        <a href="/" class="title">Tech Me About It</a>
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">Dashboard</a>
-        <button id="logout">Logout</button>
+        <a href="/dashboard" class="dashboard-text">Dashboard</a>
+        <button id="logout" class="logout-text">Logout</button>
         {{else}}
-        <a href="/login">Login</a>
+        <a href="/login" class="login-text">Login</a>
         {{/if}}
       </nav>
     </header>
