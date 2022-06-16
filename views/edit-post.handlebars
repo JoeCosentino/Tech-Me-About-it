@@ -1,19 +1,19 @@
 <article>
-    <a href="/dashboard"> &larr; Back to dashboard</a>
-    <h2>
+    <a href="/dashboard" class="back-dashboard"> &larr; Back to dashboard</a>
+    <h2 class="edit-post-title">
         Edit Post
     </h2>
     <form class="edit-post-form">
         <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-title" type="text" class="edit-post-title-input" value="{{post.title}}" />
         </div>
         <div>
-            <input name="post-body" type="text" value="{{post.body}}" />
+            <input name="post-body" type="text" class="edit-post-body-input" value="{{post.body}}" />
         </div>
-        <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+        <div class="format-plural-wrapper">
+            <a href="/post/{{post.id}}" class="format-plural">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
         </div>
-        <button type="submit">Save post</button>
+        <button type="submit" class="save-post">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>
     </form>
 </article>

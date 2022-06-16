@@ -1,8 +1,8 @@
 <div class="comments">
     {{#each this}}
     <section class="comment">
-        <div>
-            {{user.username}} on {{format_date created_at}}
+        <div class="comments-user-date">
+            <span class="username-comments">{{user.username}}</span> <span class="comments-date-span">on {{format_date created_at}}</span>
         </div>
         <div class="text">
             {{comment_text}}

@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+footer {
+    margin-top: 200px;
+    color: #777;
+    padding-left: 40px;
+}
+
 /* -------------------------------------------------------------- main */
 
 body, main {
@@ -98,7 +104,7 @@ header {
 }
 
 .date-format {
-    float: right;
+    margin-left: 150px;
 }
 
 .homepage-post-body {
@@ -191,9 +197,73 @@ header {
     border-radius: 15px;
 }
 
-.comment-form button {
+.comment-form button,
+.save-post,
+.delete-post-btn {
     border: 0;
     background-color: #cff3fa;
     padding: 4px 8px;
     border-radius: 15px;
+}
+
+.save-post,
+.delete-post-btn {
+    margin: 5px 0 5px 25px;
+}
+
+.edit-post-title {
+    color: #777;
+    margin: 10px;
+    padding: 10px;
+}
+
+.edit-post-title-input,
+.edit-post-body-input {
+    background-color: darkgray;
+    border: 0;
+    padding: 10px;
+    margin: 10px 0 5px 25px;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.edit-post-body-input {
+    height: 150px;
+}
+
+.back-dashboard,
+.format-plural {
+    margin-left: 22px;
+    text-decoration: none;
+    color: #777;
+}
+
+.format-plural {
+    margin-left: 25px;
+}
+
+.format-plural-wrapper {
+    margin: 10px 0 10px 0;
+}
+
+/* -------------------------------------------------------------- comments */
+
+.comments-user-date {
+    padding: 10px 0 5px 25px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.comments-date-span {
+    margin-left: 70px;
+}
+
+.username-comments {
+    font-weight: bold;
+}
+
+.text {
+    padding-left: 25px;
+    color: #777;
 }
