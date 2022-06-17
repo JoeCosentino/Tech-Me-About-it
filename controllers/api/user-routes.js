@@ -4,6 +4,7 @@ const withAuth = require('../../utils/auth');
 
 // GET /api/users
 router.get('/', (req, res) => {
+    console.log('==========================================');
     // Access our User model and run .findAll() method
     User.findAll({
         attributes: { exlude: ['password'] }
@@ -52,6 +53,7 @@ router.get('/:id', (req, res) => {
 
 // POST /api/users
 router.post('/', withAuth, (req, res) => {
+    console.log('==========================================');
     User.create({
         username: req.body.username,
         email: req.body.email,
