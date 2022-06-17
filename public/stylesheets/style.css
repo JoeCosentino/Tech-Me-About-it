@@ -33,7 +33,8 @@ header {
     color: darkgray;
     font-size: 25px;
     padding-left: 15px;
-    padding-top: 100px
+    padding-top: 100px;
+    margin-right: 10px;
 }
 
 .dashboard-text,
